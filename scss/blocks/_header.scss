@@ -1,0 +1,116 @@
+.header {
+  background: $gray;
+
+  &__links {
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 16% 38% 30% 16%;
+    grid-template-rows: 100%;
+
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 145.81%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #C8C7C7;
+    text-decoration: none;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__logo-wrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__links-link {
+    color: #696969;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+
+  &__networks{
+    background: $white;
+    display: flex;
+    justify-content: space-evenly;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__wrp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__nav {
+    background: $black;
+    padding: 8% 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__logo-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+    color: #c1bfbf;
+  }
+
+  &__links-active {
+    position: relative;
+    color: #c1bfbf;
+  }
+
+  &__links-active:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    left: -13px;
+    top: 8px;
+    background: #c1bfbf;
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+    background-image: url("../img/burger.png");
+    background-repeat: no-repeat;
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+}

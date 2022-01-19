@@ -1,0 +1,38 @@
+.baner {
+  background: $black;
+
+  &__wrp {
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/baner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    @include mobile {
+      min-height: 400px;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    width: 704px;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 115px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @include mobile {
+      margin-top: 55px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 51px;
+      text-align: center;
+    }
+  }
+}
